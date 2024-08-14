@@ -13,7 +13,10 @@ interface UserState{
 
 
 export const useUser = create<UserState>((set) => ({
-    data: { name: "", age: undefined, imageUrl: "" },
+    data: { 
+        name: "Usuário sem nome", 
+        age: undefined, 
+        imageUrl: "https://cdn1.iconfinder.com/data/icons/programing-development-8/24/react_logo-512.png" },
     changeData: (to: UserData) =>
         set((state) => ({
             data: {
