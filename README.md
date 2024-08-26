@@ -1,1 +1,1 @@
-# zustand-practice-project
+# Zustand Testing Project
