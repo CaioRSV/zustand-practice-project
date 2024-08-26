@@ -12,11 +12,7 @@ import {
   } from '@chakra-ui/react'
 
 import { Input } from '@chakra-ui/react'
-
-
 import { BiSolidEdit } from "react-icons/bi";
-
-
 
 const ChangeUserModal = () => {
     const {data, changeData} = useUser();

@@ -12,6 +12,8 @@ import { useUser } from '@/states/userState';
 
 import { ImSpinner } from "react-icons/im";
 
+import TaskArea from '@/components/taskArea';
+
 
 export default function Home() {
   const { data , changeData} = useUser();
@@ -43,6 +45,10 @@ export default function Home() {
           </div>
 
         </div>
+
+        <div className={`min-w-32 min-h-32 m-2 border-1 rounded-md`}>
+          <TaskArea/>
+        </div>
         
         {
           imageLoading
@@ -58,6 +64,7 @@ export default function Home() {
 
         <ChangeImageModal/>
       </main>
+
     </ChakraProvider>
   );
 }
